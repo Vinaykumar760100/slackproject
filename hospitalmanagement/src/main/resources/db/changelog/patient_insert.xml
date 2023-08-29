@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd
+      http://www.liquibase.org/xml/ns/pro
+      http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd">
+    <changeSet id="5" author="vinay">
+        <insert tableName="patients">
+            <column name="patient_name" value="ravi"></column>
+            <column name="gender" value="M"></column>
+            <column name="date_of_birth" value="2000-05-28"></column>
+            <column name="contact_number" value="8328105727"></column>
+            <column name="Address" value="Ramnagar,Visakhapatnam-530 002"></column>
+        </insert>
+        <insert tableName="patients">
+            <column name="patient_name" value="sai"></column>
+            <column name="gender" value="M"></column>
+            <column name="date_of_birth" value="2010-01-25"></column>
+            <column name="contact_number" value="9494200472"></column>
+            <column name="Address" value="Srikakulam Official Colony"></column>
+        </insert>
+        <insert tableName="patients">
+            <column name="patient_name" value="vinay"></column>
+            <column name="gender" value="M"></column>
+            <column name="date_of_birth" value="1999-08-19"></column>
+            <column name="contact_number" value="7601009597"></column>
+            <column name="address" value="bheemasingi,vizianagaram 535250"></column>
+        </insert>
+        <insert tableName="patients">
+            <column name="patient_name" value="sridhar"></column>
+            <column name="gender" value="M"></column>
+            <column name="date_of_birth" value="1999-07-21"></column>
+            <column name="contact_number" value="7601009598"></column>
+            <column name="address" value="jogempeta,anakapalli"></column>
+        </insert>
+        <insert tableName="patients">
+            <column name="patient_name" value="venky"></column>
+            <column name="gender" value="M"></column>
+            <column name="date_of_birth" value="1999-04-05"></column>
+            <column name="contact_number" value="8142076043"></column>
+            <column name="address" value="kothapalem,gopalapatnam"></column>
+
+        </insert>
+    </changeSet>
+</databaseChangeLog>

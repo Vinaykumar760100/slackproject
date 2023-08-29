@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd
+      http://www.liquibase.org/xml/ns/pro
+      http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd">
+    <changeSet id="8" author="vinay">
+        <insert tableName="medical_records">
+            <column name="patient_id" value="10"></column>
+            <column name="doctor_id" value="100"></column>
+            <column name="date" value="2023-09-01"></column>
+            <column name="diagnosis" value="hypertension"></column>
+            <column name="prescription" value="hypertension:(Lisinopril)Dosage: The usual starting dose is around 10 mg once daily"></column>
+            <column name="notes" value="patient advised lifestyle changes"></column>
+        </insert>
+        <insert tableName="medical_records">
+            <column name="patient_id" value="11"></column>
+            <column name="doctor_id" value="101"></column>
+            <column name="date" value="2023-09-02"></column>
+            <column name="diagnosis" value="vaccination"></column>
+            <column name="prescription" value="administer vaccine X as per dosage schedule. Monitor for any adverse reactions."></column>
+            <column name="notes" value="noadverse reactions observed"></column>
+        </insert>
+        <insert tableName="medical_records">
+            <column name="patient_id" value="12"></column>
+            <column name="doctor_id" value="104"></column>
+            <column name="date" value="2023-09-03"></column>
+            <column name="diagnosis" value="rash"></column>
+            <column name="prescription" value="zinc oxide cream"></column>
+            <column name="notes" value="apply prescribed ointment"></column>
+        </insert>
+        <insert tableName="medical_records">
+            <column name="patient_id" value="13"></column>
+            <column name="doctor_id" value="103"></column>
+            <column name="date" value="2023-09-04"></column>
+            <column name="diagnosis" value="sprained ankle"></column>
+            <column name="prescription" value="Apply ice, immobilize the ankle, take pain relievers, and elevate the foot."></column>
+            <column name="notes" value="rice protocol advised"></column>
+        </insert>
+        <insert tableName="medical_records">
+            <column name="patient_id" value="14"></column>
+            <column name="doctor_id" value="102"></column>
+            <column name="date" value="2023-09-05"></column>
+            <column name="diagnosis" value="Common cold"></column>
+            <column name="prescription" value="Dextromethorphan 2 days daily afternoon"></column>
+            <column name="notes" value="rest and hydration recommended"></column>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
